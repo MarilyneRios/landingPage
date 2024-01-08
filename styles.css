@@ -1,0 +1,267 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #eee;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+main {
+    /*position:absolute;*/
+}
+
+#page-wrapper{
+    position: relative;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+
+/*entête*/
+
+header{
+    position: fixed;
+    top:0;
+    min-height: 50px;
+    margin-top: 10px;;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+ }
+
+.logo img{
+    width: 60vw;
+    max-width: 300px;
+    height:100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+img{
+    /*détermine à quelle distance en dehors de ses limites 
+    un élément peut être peint avant d'être coupé.*/
+    overflow-clip-margin: content-box;
+    /* définit comment gérer le dépassement du contenu
+     d'un élément dans son bloc*/
+    overflow: clip;
+}
+
+@media (max-width: 650px){
+    .logo {
+    margin: 0 auto;
+    }
+}
+nav{
+    font-weight: 400px;
+    margin-left: 15%;
+    width: 35vw;
+    display: block;
+    justify-content: flex-end;
+}
+ 
+
+@media (max-width: 650px) {
+
+    nav{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+}   
+
+#nav-bar ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*hero part*/
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    line-height: 50px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#email{
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+   max-width: 275px;
+   padding:5px;
+   margin: 10px;
+
+}
+
+#submit{
+    font-weight: 900;
+    font-size: 1em;
+    background-color: #f1c40f;;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+/*features part*/
+#Features{
+    line-height: 1.5rem;  
+    padding-top: 30px;
+}
+
+.grid{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: rgb(255, 145, 0);
+    padding: 25px;
+} 
+
+.fa {
+    line-height: 1;
+    display: inline-block;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+/*la vidéo*/
+
+#How-It-Works{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*partie des prix*/
+#Pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 60px;
+    width: 100%;
+}
+.ticket{
+    border: 1px solid black;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow:auto;
+    margin: 20px;
+    border-radius: 3px;
+
+}
+
+.price_titre{
+    font-weight: 600;
+    background-color: #ddd;
+    padding: 15px;
+    height: 50px;
+}
+
+.price{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.description_instument{
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #f1c40f;;
+    padding: 15px 0px;
+    margin: 0 90px ;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    min-width: 100px;
+    
+}
+
+/*pied de page*/
+footer {
+  
+   background-color: #ddd;
+   display: block; 
+   margin-top: 30px;
+   padding:20px
+}
+
+/* pour remplir en #ddd faut 
+appliquer le background color a ts les niveaux*/
+
+#ul_footer{
+    background-color: #ddd;
+    display: flex;
+    justify-content:flex-end;
+}
+/*espacer les nav link*/
+footer ul li{
+    margin: 10px;
+    background-color: #ddd;
+}
+
+span{
+    background-color: #ddd;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    justify-content: flex-end;
+}
